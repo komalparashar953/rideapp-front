@@ -1,5 +1,5 @@
 import React, { useRef, useState, useContext, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import CaptainDetails from '../components/CaptainDetails'
 import ConfirmNewRidePopUp from '../components/ConfirmNewRidePopUp'
 import image from '../assets/image.jpg'
@@ -20,7 +20,8 @@ const CaptainHome = () => {
 
   const { socket } = useContext(SocketContext);
   const { captain } = useContext(CaptainDataContext);
-
+  const navigate = useNavigate();
+  
   useEffect(() => {
     socket.emit('join', {
       userId: captain._id,
@@ -64,7 +65,7 @@ const CaptainHome = () => {
       // Clear user data / tokens
       localStorage.removeItem("captain_token");
       // Redirect to login
-      window.location.href = "/captain-signin";
+      navigate( "/captain-signin");
     };
 
   async function confirmRide() {
