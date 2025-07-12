@@ -118,7 +118,7 @@ const Home = () => {
     // Clear user data / tokens
     localStorage.removeItem("user_token");
     // Redirect to login
-    window.location.href = "/signin";
+    navigate( "/signin");
   };
 
 
