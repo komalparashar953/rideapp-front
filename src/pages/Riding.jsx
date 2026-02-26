@@ -45,7 +45,7 @@ const Riding = () => {
                     <i className='ri-map-pin-2-fill text-lg' />
                     <div>
                     <h3 className='text-lg font-medium'>{ride?.destination}</h3>
-                    <p className='text-sm -mt-1 text-gray-600'>citymall noida</p>
+                    
                     </div>
                 </div>
                 <div className='flex items-center gap-5 p-2'>

@@ -18,14 +18,14 @@ const LookingForCaptain = (props) => {
             <i className='ri-map-pin-user-fill text-lg' />
             <div> 
               <h3 className='text-lg font-medium'>{props.lookingData.pickup}</h3>
-              <p className='text-sm -mt-1 text-gray-600'>sheriyans coding school bhopal</p>
+              
             </div>
           </div>
           <div className='flex items-center gap-5 p-2 border-b-2 '>
             <i className='ri-map-pin-2-fill text-lg' />
             <div>
               <h3 className='text-lg font-medium'>{props.lookingData.destination}</h3>
-              <p className='text-sm -mt-1 text-gray-600'>citymall noida</p>
+              
             </div>
           </div>
           <div className='flex items-center gap-5 p-2'>
